@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtFields">25dp</dimen>
+    <dimen name="radio_buttons">15dp</dimen>
+    <dimen name="buttons">18dp</dimen>
+
+    <dimen name="buttons_heigth">50dp</dimen>
+
+
+</resources>

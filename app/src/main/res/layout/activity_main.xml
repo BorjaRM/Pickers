@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context="com.example.borja.dialegs.MainActivity">
+
+    <Button
+        android:id="@+id/btnFecha"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttons_heigth"
+        android:background="@drawable/rounderbutton"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:text="Elige una fecha"
+        android:textSize="@dimen/buttons" />
+
+    <Button
+        android:id="@+id/btnHora"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttons_heigth"
+        android:background="@drawable/rounderbutton"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:text="Elige una hora"
+        android:textSize="@dimen/buttons" />
+
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttons_heigth"
+        android:background="@drawable/rounderbutton"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttons"
+        android:text="Elige un color" />
+
+    <LinearLayout
+        android:id="@+id/colores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/rojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rojo"
+                android:textSize="@dimen/radio_buttons" />
+
+            <RadioButton
+                android:id="@+id/verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Verde"
+                android:textSize="@dimen/radio_buttons" />
+
+            <RadioButton
+                android:id="@+id/azul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Azul"
+                android:textSize="@dimen/radio_buttons" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/consola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtFecha"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttons_heigth"
+                android:text="Fecha: "
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtFields" />
+
+            <TextView
+                android:id="@+id/txtHora"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttons_heigth"
+                android:text="Hora: "
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtFields" />
+
+            <TextView
+                android:id="@+id/txtColor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttons_heigth"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Color: "
+                android:textSize="@dimen/txtFields" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
